@@ -1,0 +1,37 @@
+{
+    "version": "8.2.0",
+    "description": "Text shaping engine. Supports OpenType and Apple Advanced Typography.",
+    "homepage": "https://harfbuzz.github.io/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.2.0/harfbuzz-win64-8.2.0.zip",
+            "hash": "b7072db8cfaa2aa9691a6bfaeba0b90351d0bd91e06bbb56f4a8e68b6f9fcf9f",
+            "extract_dir": "harfbuzz-win64"
+        },
+        "32bit": {
+            "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.2.0/harfbuzz-win32-8.2.0.zip",
+            "hash": "43906f2e83ecb852fb6c34dfdc5666e4030d2263a180b2b64e1b3174071a6909",
+            "extract_dir": "harfbuzz-win32"
+        }
+    },
+    "bin": [
+        "hb-shape.exe",
+        "hb-subset.exe",
+        "hb-view.exe",
+        "hb-ot-shape-closure.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/harfbuzz/harfbuzz"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-win64-$version.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-win32-$version.zip"
+            }
+        }
+    }
+}

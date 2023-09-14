@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Sep 09 18:02:04 ART 2023
+jackson-dataformat-toml-2.15.2-sources.jar>central=
+jackson-dataformat-toml-2.15.2.jar>central=
+jackson-dataformat-toml-2.15.2.pom>central=

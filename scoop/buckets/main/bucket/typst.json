@@ -1,0 +1,25 @@
+{
+    "version": "0.7.0",
+    "description": "A markup-based typesetting system for the sciences.",
+    "homepage": "https://typst.app",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/typst/typst/releases/download/v0.7.0/typst-x86_64-pc-windows-msvc.zip",
+            "hash": "9fb7fe840a031a785018dd3d2f43e851bf436bf89ce3dae1b5a87033d2ba02d6"
+        }
+    },
+    "extract_dir": "typst-x86_64-pc-windows-msvc",
+    "bin": "typst.exe",
+    "checkver": {
+        "url": "https://github.com/typst/typst/releases",
+        "regex": "tag/v?([\\d.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/typst/typst/releases/download/v$version/typst-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

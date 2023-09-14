@@ -1,0 +1,37 @@
+{
+    "version": "6.9.0",
+    "description": "Like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed.",
+    "homepage": "https://miller.readthedocs.io",
+    "license": "BSD-2-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/johnkerl/miller/releases/download/v6.9.0/miller-6.9.0-windows-amd64.zip",
+            "hash": "b28cbb2517be4cbf57a3d3aa69a6e643157091561924e6c0382a62a03c89fb80",
+            "extract_dir": "miller-6.9.0-windows-amd64"
+        },
+        "32bit": {
+            "url": "https://github.com/johnkerl/miller/releases/download/v6.9.0/miller-6.9.0-windows-386.zip",
+            "hash": "574bd27cc6f70548ff9ccf7fcb0041e28bc5d5f9458cbc3662b209785902b3db",
+            "extract_dir": "miller-6.9.0-windows-386"
+        }
+    },
+    "bin": "mlr.exe",
+    "checkver": {
+        "github": "https://github.com/johnkerl/miller"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/johnkerl/miller/releases/download/v$version/miller-$version-windows-amd64.zip",
+                "extract_dir": "miller-$version-windows-amd64"
+            },
+            "32bit": {
+                "url": "https://github.com/johnkerl/miller/releases/download/v$version/miller-$version-windows-386.zip",
+                "extract_dir": "miller-$version-windows-386"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/miller-$version-checksums.txt"
+        }
+    }
+}
